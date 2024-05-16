@@ -1,0 +1,375 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+@font-face {
+  font-family: fonta;
+  src: url(./font/Achafsex.ttf);
+}
+@font-face {
+  font-family: fontb;
+  src: url(./font/AlexBrush-Regular.ttf);
+}
+@font-face {
+  font-family: fontc;
+  src: url(./font/ALIEES_.TTF);
+}
+@font-face {
+  font-family: fontd;
+  src: url(./font/AXIS-ExtraBold.ttf);
+}
+@font-face {
+  font-family: fonte;
+  src: url(./font/Blade\ 2.ttf);
+}
+@font-face {
+  font-family: fontf;
+  src: url(./font/Blazed.ttf);
+}
+@font-face {
+  font-family: fontg;
+  src: url(./font/BLOODY.TTF);
+}
+@font-face {
+  font-family: fonth;
+  src: url(./font/Charcoal.otf);
+}
+body {
+  background-color: #030327;
+  color: #eee !important;
+}
+
+#container {
+  max-width: 60%;
+  margin: 10px auto;
+}
+
+#my__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#my__header .logo {
+  font-size: 1.5em;
+  font-weight: 800;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#my__header li {
+  display: inline-block;
+  padding: 0 0 0 1.1em;
+}
+
+#my__header a {
+  color: #edf;
+  font-size: 1.2em;
+}
+
+hr {
+  width: 100%;
+  margin: 15px auto;
+  border: 1px solid rgba(245, 222, 179, 0.15);
+}
+
+.my__dp {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 7% 0;
+}
+
+.my__dp .dp {
+  width: 250px;
+  height: 250px;
+  background-image: url(./img/niqqa.jpg);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 60px rgba(7, 0, 0, 0.601);
+}
+
+.my__dp .dp-content {
+  font-size: 2em;
+  max-width: 56%;
+  text-align: center;
+  font-family: fontd;
+  text-transform: capitalize;
+  line-height: 1.4;
+  margin-block: 1em;
+}
+
+.my__dp .dp-content span {
+  font-family: fonta;
+}
+
+.my__dp .dp-logo {
+  display: flex;
+  font-size: 2.5em;
+  width: 20%;
+  justify-content: space-between;
+  margin: 0 15px;
+}
+
+.my__dp .dp-logo p a {
+  text-decoration: none;
+  color: #edf;
+  background-color: rgba(238, 221, 255, 0.041);
+  padding: 15px;
+  border-radius: 610px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.my__dp .dp-logo p a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(19, 1, 37);
+  transform: scale(1.1, 1.1);
+}
+
+.my__dp button {
+  margin-block: 1.5em;
+  border: none;
+  padding: 16px 18px;
+  background-color: blue;
+  border-radius: 7px;
+  transition: 0.5s;
+}
+
+.my__dp button:hover {
+  background-color: rgb(255, 0, 0);
+  color: rgb(203, 184, 222);
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+.my__dp button a {
+  color: #edf;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.articles {
+  max-width: 70%;
+  margin: auto;
+}
+
+.articles h1 {
+  font-size: 2.7em;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.articles article {
+  margin: 3.5em 0;
+}
+
+.articles h2 {
+  font-family: "Trebuchet MS";
+  font-size: 1.2em;
+}
+
+.articles .datetime {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5em 0;
+}
+
+.articles article div p span {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-image: url(./img/Valentine_Enedah\,\ Program\ Lead\,\ AI_ML\,\ Zummit\ Africa\ Academy\ \ b.\ \ Short\ Bio.jpg);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 60px rgba(7, 0, 0, 0.601);
+}
+
+.articles article div p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: fonta;
+  font-size: 1.3em;
+  color: rgba(238, 221, 255, 0.856);
+}
+
+.articles article div small {
+  color: grey;
+}
+
+.works {
+  max-width: 80%;
+  margin: 10% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap !important;
+  gap: 1em;
+}
+
+.works div:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.works div {
+  width: 40%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 0 60px rgba(7, 0, 0, 0.601);
+  border-radius: 1em;
+  opacity: 0.5;
+}
+
+.work__1 {
+  background-image: url(./img/like-mother-like-daughter-cropped-portrait-adorable-little-girl-her-mother-relaxing-sofa-their-living-room-home.jpg);
+}
+
+.work__2 {
+  background-image: url(./img/african-american-couple-sitting-table-looking-food-delivery.jpg);
+}
+
+.work__3 {
+  background-image: url(./img/medium-shot-woman-holding-phone.jpg);
+}
+
+.work__4 {
+  background-image: url(./img/Valentine_Enedah\,\ Program\ Lead\,\ AI_ML\,\ Zummit\ Africa\ Academy\ \ b.\ \ Short\ Bio.jpg);
+}
+
+.sub__footer {
+  display: flex;
+  gap: 1em;
+  color: #fff;
+  margin: 5em 0 0 0;
+}
+
+.sub__footer p a {
+  color: #edf;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: "Trebuchet MS";
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Trebuchet MS";
+  align-items: center;
+}
+
+footer .footer___1 p {
+  color: #fff;
+  font-size: 0.8em !important;
+}
+
+footer .footer___1 p span {
+  color: grey;
+}
+
+.footer___2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .footer___2 p {
+  font-size: 1em;
+  width: 15%;
+  margin: 0 15px;
+  flex-direction: column;
+}
+
+footer .footer___2 p a {
+  text-decoration: none;
+  color: #edf;
+  padding: 5px;
+  border-radius: 610px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+@media (max-width: 950px) {
+  #my__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  #my__header li {
+    margin: 1em 0;
+    padding: 7px !important;
+  }
+  .my__dp .dp-content {
+    max-width: 100% !important;
+    font-size: 1em !important;
+  }
+  .my__dp .dp-logo {
+    display: flex;
+    margin: 0 !important;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    width: 100% !important;
+  }
+  .articles {
+    max-width: 100% !important;
+  }
+  .articles h1 {
+    font-size: 1.6em !important;
+  }
+  .articles article {
+    margin: 1.5em 0;
+  }
+  .articles .datetime {
+    flex-direction: column;
+  }
+  .works {
+    flex-wrap: wrap !important;
+    max-width: 100% !important;
+  }
+  .works div {
+    width: 100% !important;
+  }
+  .sub__footer {
+    justify-content: center;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer div {
+    margin: 1em 0;
+  }
+  hr:first-of-type {
+    margin: 0 0 3em 0 !important;
+  }
+}
+@media (max-width: 325px) {
+  #container {
+    max-width: 80% !important;
+  }
+  #my__header li {
+    margin: 1em 0;
+    padding: 5px !important;
+    font-size: 0.8em !important;
+  }
+}/*# sourceMappingURL=style.css.map */
